@@ -1,0 +1,42 @@
+
+
+.contact{
+    position: relative;
+
+    .contact__background{
+        
+        background: $color--blue;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+    }
+
+    .contact__container {
+
+        text-align: center;
+        padding: 90px 0px;
+        position: relative;
+
+        .contact__header {
+
+            color: $color--white;
+            margin-bottom: 30px;
+        }
+    }
+    .wpcf7-form-control-wrap {
+        border: none;
+        color: white;
+        font-size: 18px;
+    }
+    div.wpcf7-mail-sent-ok {
+        border: none !important;
+            color: white !important;
+            font-size: 18px !important;
+    }
+}
+div.wpcf7-mail-sent-ok {
+    border: none !important;
+        color: white !important;
+        font-size: 18px !important;
+}

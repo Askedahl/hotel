@@ -1,0 +1,113 @@
+.historie {
+    margin-bottom: 50px;
+    @include respond-to-min($lg) {
+        margin-bottom: 80px;
+    }
+
+    .histo__container__date {
+        position: relative;
+        height: 70px;
+        width: 70px;
+        line-height: 68px;
+        font-size: 25px;
+        text-align: center;
+        margin: 0px 10px;
+        position: relative;
+        z-index: 2;
+
+        @include respond-to-min($lg) {
+            height: 92px;
+            width: 92px;
+            line-height: 90px;
+            margin: 0px 20px;
+        }
+        
+
+        @include respond-to-min($xl) {
+            height: 120px;
+            width: 120px;
+            line-height: 110px;
+        }
+
+       
+      }
+      .histo__container__date:before {
+        position: absolute;
+        content: '';
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        transform: rotateX(45deg) rotateZ(45deg);
+        border: 1px solid $color--black;
+        background: $color--white;
+        z-index: -1;
+      }
+      
+
+    .img-left {
+        flex-direction: row-reverse;
+	}
+
+
+    .histo__container__img {
+        height: 400px;
+        padding-top: 25px;
+        @include respond-to-min($md) {
+            padding-bottom: 30px;
+            padding-top: 30px;
+
+           
+        }
+    }
+
+    .histo__container__img__last {
+        height: 400px;
+        padding-top: 25px;
+        @include respond-to-min($md) {
+            padding-bottom: 30px;
+            padding-top: 30px;
+
+           
+        }
+    }
+
+    .histo__container__info {
+        padding: 10px 0px;
+        text-align: center;
+        @include respond-to-min($md) {
+            text-align: left;
+            padding: 130px 0px;
+        }
+    }
+
+    .histo__container__date__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       
+
+        @include respond-to-min($md) {
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+
+        &:after {
+            
+
+            @include respond-to-min($md) {
+                position: absolute;
+            content: '';
+            top: 0px;
+            left: 49.5%;
+            height: 100%;
+            border: 0.5px solid $color--black;
+            }
+
+            @include respond-to-min($xl) {
+                border: 0.8px solid $color--black;
+            }
+        }
+    }
+}

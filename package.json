@@ -1,0 +1,28 @@
+{
+  "name": "oakdigital-wp",
+  "version": "0.3.0",
+  "description": "Wordpress build by Oak Digital",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "wp",
+    "theme",
+    "oakdigital"
+  ],
+  "author": "Jakob Plenge @ Oak Digital",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.1.0",
+    "jit-grunt": "^0.10.0"
+  }
+}

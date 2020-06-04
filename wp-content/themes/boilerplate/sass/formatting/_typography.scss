@@ -1,0 +1,117 @@
+/*==============================
+    :: TYPOGRAPHY STYLING :: 
+==============================*/
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+    font-family: $font--sec;
+    font-style: italic;
+    color: $color--blue;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 400;
+    @include respond-to-min($md) {
+        font-size: 70px;
+    }
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 400;
+    
+    @include respond-to-min($md) {
+        font-size: 55px;
+    }
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 400;
+    @include respond-to-min($md) {
+        font-size: 40px;
+    }
+}
+
+p {
+    font-family: $font--third;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16;
+    color: $color--blue;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style-type: none;
+        display: inline;
+        
+        a {
+            position: relative;
+            font-family: $font--sec;
+            font-style: italic;
+            text-transform: uppercase;
+            font-weight: 400;
+            color: $color--blue;
+            padding: 0px 0px;
+
+            &:after {    
+                content: "";
+                background: none repeat scroll 0 0 transparent;
+                bottom: 0px;
+                display: block;
+                height: 1px;
+                left: 50%;
+                position: absolute;
+                background: $color--black;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                width: 0%;
+               
+              }
+
+              &:hover {
+                text-decoration: none;
+                color: $color--black;
+
+                &:after {    
+                    width: 100%; 
+                    left: 0%; 
+                  }
+
+            }	
+        }
+    }
+}
+
+
+ol {
+
+    li {
+        font-family: $font--sec;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 25px;
+    }
+}
+
+blockquote {
+
+}
+
+.text--highlight {
+
+}
+
+// Alignment
+
+.align--left { text-align: left; }
+.align--center { text-align: center; }
+.align--right { text-align: right; }

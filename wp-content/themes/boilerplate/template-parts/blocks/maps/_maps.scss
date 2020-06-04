@@ -1,0 +1,61 @@
+
+
+.maps{
+    z-index: 1;
+    position: relative;
+    padding: 90px 0px;
+
+    .maps__background{
+        
+        background: $color--blue;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        z-index: -1;
+    }
+
+    .maps__header {
+        color: $color--white;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .maps__container__info {
+        
+        color: $color--white !important;
+        margin-top: 20px;
+        font-size: 20px;
+        @include respond-to-min($md) {
+            margin-top: 0px;
+        }
+        .maps__container__info__navn {
+            color: $color--white !important;
+        }
+        .maps__container__info__gade {
+            color: $color--white !important;
+        }
+        .maps__container__info__by {
+            color: $color--white !important;
+        }
+        .maps__container__info__tlf {
+            color: $color--white !important;
+        }
+        .maps__container__info__social__container {
+.maps__container__info__social__paragraph {
+    color: $color--white !important;
+}
+            .maps__container__info__social {
+                
+                .maps__container__info__social__icons {
+
+                    svg {
+                        height: 30px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+

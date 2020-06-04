@@ -1,0 +1,11 @@
+
+<svg width="120px" height="65px" viewBox="0 0 120 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-8" transform="translate(-128.000000, -602.000000)" fill="#FFFFFF">
+            <path d="M128,667 L128,602 L134,602 C140.407461,602 145.876584,606.017506 148.025789,611.670939 C148.260414,612.113798 148.434909,612.525489 148.541408,612.892368 C153.255121,629.130663 168.241444,641 186,641 C186.334333,641 186.667683,640.995793 187,640.987429 C187.332317,640.995793 187.665667,641 188,641 C205.758556,641 220.744879,629.130663 225.458592,612.892368 C225.565091,612.525489 225.739586,612.113798 225.974211,611.670939 C228.123416,606.017506 233.592539,602 240,602 L248,602 L248,667 L187,667 L128,667 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

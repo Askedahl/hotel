@@ -1,0 +1,137 @@
+/*!
+Theme Name: Oak Digital Boilerplate
+Theme URI: https://debredeplanker.dk
+Author: Jakob Plenge @ Oak Digital
+Author URI: https://oakdigital.dk
+Description: Oak Digital Boilerplate Wordpress theme.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: oak_theme
+Tags: translation-ready
+*/
+
+/*--------------------------------------------------------------
+# VARIABLES
+--------------------------------------------------------------*/
+
+
+$font--pri: 'freight-sans-pro', sans-serif;
+$font--sec: 'freight-display-pro', serif;
+$font--third: 'Roboto', sans-serif;
+$font--menu: 'Josefin Sans', sans-serif;;
+
+// Colors
+$color--white     	: #ffffff;
+$color--black     	: #000000;
+$color--blue-green 	: #66cccc;
+$color--blue      	: #052f3c;
+$color--blue--dark 	: #002244;
+$color--grey--light : #eeeeee;
+$color--grey      	: #cccccc;
+$color--grey--dark	: #111111;
+$color--pink      	: #ff0066;
+$color--teal      	: #45cecc;
+
+
+$color--shadow: 0 0 30px rgba(0,0,0,0.1);
+
+// Default breakpoints
+$xs: 0;
+$xs--max: 575.98px;
+$sm: 576px;
+$sm--max: 767.98px;
+$md: 768px;
+$md--max: 991.98px;
+$lg: 992px;
+$lg--max: 1199.98px;
+$xl: 1200px;
+$xxl: 1400px;
+
+
+/*--------------------------------------------------------------
+# Wordpress gutenberg editor styling to improve editor
+--------------------------------------------------------------*/
+.wp-block {
+    width: 100%;
+    max-width: none;
+}
+[data-type="core/paragraph"] {
+    display: none;
+}
+
+.editor-block-list__layout {
+    padding-bottom: 100px;
+}
+
+.editor-block-list__layout .block a {
+    display: inline-block;
+    pointer-events: none;
+}
+
+
+/*--------------------------------------------------------------
+# IMPORTS
+--------------------------------------------------------------*/
+// Base styles
+@import 'base/fonts';
+@import 'base/mixins';
+@import 'base/helpers';
+
+// Layout styles
+@import 'layout/containers';
+@import 'layout/header';
+@import 'layout/footer';
+
+// Formatting styles
+@import 'formatting/typography';
+@import 'formatting/buttons';
+@import 'formatting/icons';
+
+// Components
+@import 'components/components';
+@import 'formatting/forms';
+
+
+.block {
+
+    @import 'blocks/blocks';
+    @import 'formatting/decor';
+    margin-bottom: 50px;
+    @include respond-to-min($lg) {
+        margin-bottom: 80px;
+    }
+    &:last-child {
+        margin-bottom: 0px;
+    }
+
+}
+
+div.wpcf7-response-output {
+	margin: 2em 0.5em 1em;
+	padding: 0.2em 1em;
+}
+
+div.wpcf7-mail-sent-ok {
+	border: none !important;
+            color: white !important;
+            font-size: 18px !important;
+}
+
+div.wpcf7-mail-sent-ng {
+	border: none !important;
+            color: white !important;
+            font-size: 18px !important;
+}
+
+div.wpcf7-spam-blocked {
+	border: none !important;
+            color: white !important;
+            font-size: 18px !important;
+}
+
+div.wpcf7-validation-errors {
+	border: none !important;
+            color: white !important;
+            font-size: 18px !important;
+}

@@ -1,0 +1,14 @@
+.banner {
+
+    .banner__background {
+
+        height: 500px;
+@include respond-to-min($lg) {
+    height: 700px;
+            }
+        .banner__background__img {
+
+
+        }
+    }
+}

@@ -1,0 +1,139 @@
+/*==============================
+    :: FORM STYLING ::
+==============================*/
+
+form {
+	font-family: $font--sec;
+
+	.form__group {
+		display: flex;
+		margin: 0 -7.5px 15px -7.5px;
+
+		.field {
+			flex: 1 1 50%;
+			position: relative;
+			padding: 0 7.5px;
+
+			label {
+				position: absolute;
+				top: 20px;
+				left: 22.5px;
+				font-size: 16px;
+				transition: all 0.3s ease-out;
+				pointer-events: none;
+			}
+
+			.label--icon {
+				left: 50px;
+			}
+
+			input[type=text], [type=number], [type=tel]{
+				width: 100%;
+				padding: 18px 11px;
+				border: 2px solid $color--blue;
+				background-color: $color--white;
+
+				&:focus {
+					padding: 26px 11px 10px 11px;
+					border: 2px solid $color--white;
+					outline: none;
+				}
+
+				&:focus,
+				&:not(:placeholder-shown) {
+					padding: 26px 11px 10px 11px;
+					border: 2px solid $color--white;
+					outline: none;
+
+					&+label {
+						top: 15px;
+						font-size: 10px;
+					}
+				}
+			}
+
+			input[type=checkbox] {
+				position: absolute;
+				left: -9999px;
+			}
+
+			input[type=submit] {
+				margin-top: 20px;
+			}
+
+			input.input--icon {
+				padding-left: 50px;
+
+				&:focus {
+					padding: 26px 11px 10px 40px;
+					border: 2px solid $color--white;
+					outline: none;
+				}
+
+				&:focus,
+				&:not(:placeholder-shown) {
+					padding: 26px 11px 10px 40px;
+					border: 2px solid $color--white;
+					outline: none;
+				}
+			}
+
+			input.input--calendar {
+				padding: 18px 11px 18px 40px;
+
+				&:focus {
+					padding: 18px 11px 18px 40px;
+				}
+
+				&:focus,
+				&:not(:placeholder-shown) {
+					padding: 18px 11px 18px 40px;
+					border: 2px solid $color--white;
+					outline: none;
+				}
+			}
+
+			select {
+				width: 100%;
+				padding: 18px 11px;
+				border: 2px solid $color--blue;
+				border-radius: 5px;
+				background-color: #E8EEF5;
+
+				&:focus {
+					border: 2px solid $color--white;
+					outline: none;
+				}
+			}
+
+			.select--icon {
+				padding-left: 40px;
+			}
+
+			span {
+				font-size: 12px;
+			}
+
+			&__icon {
+				position: absolute;
+				top: 50%;
+				left: 17px;
+				width: 25px;
+				height: 25px;
+				transform: translateY(-50%);
+
+				svg {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.divider {
+		display: block;
+		height: 1px;
+		width: 100%;
+		background-color: $color--blue;
+		margin-bottom: 10px;
+	}
+}

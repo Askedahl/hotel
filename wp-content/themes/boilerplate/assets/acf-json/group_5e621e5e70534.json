@@ -1,0 +1,152 @@
+{
+    "key": "group_5e621e5e70534",
+    "title": "Component :: Contact Form :: Flexible",
+    "fields": [
+        {
+            "key": "field_5e623a80ceba5",
+            "label": "Button Text",
+            "name": "button_text",
+            "type": "text",
+            "instructions": "The text for the submit button",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Send",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e6223c7d1c29",
+            "label": "Form Group",
+            "name": "form_group",
+            "type": "repeater",
+            "instructions": "The form group can contain 1 or 2 input fields, if two fields are chosen they will appear next to eachother.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 1,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Group",
+            "sub_fields": [
+                {
+                    "key": "field_5e6223dfd1c2a",
+                    "label": "Field",
+                    "name": "field",
+                    "type": "repeater",
+                    "instructions": "A Field contains the actual input, the limit amount of fields for a group is 2.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 1,
+                    "max": 2,
+                    "layout": "table",
+                    "button_label": "Add Field",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e6223f0d1c2b",
+                            "label": "Input Type",
+                            "name": "input_type",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "text": "Text",
+                                "number": "Number",
+                                "email": "Email",
+                                "checkbox": "Checkbox"
+                            },
+                            "default_value": [
+                                "text"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5e62245cd1c2c",
+                            "label": "Input Name",
+                            "name": "input_name",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5e622470d1c2d",
+                            "label": "Input Label",
+                            "name": "input_label",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1583510744
+}

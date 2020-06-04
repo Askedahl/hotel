@@ -1,0 +1,75 @@
+.aktiviteter {
+
+    .aktiviteter__bar {
+        text-align: center;
+
+        .aktiviteter__bar__item {
+            cursor: pointer;
+            border-right: 0px solid $color--black;
+            display: block;
+            position: relative;
+            font-family: $font--pri;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $color--black;
+            padding: 0px 15px;
+            font-size: 16px;
+            letter-spacing: 3px;
+            transition: 0.2s;
+
+            &:hover {
+                color: $color--grey;
+            }
+
+          
+            @include respond-to-min($md) {
+                display: inline-block;
+                border-right: 1px solid $color--black;
+                &:last-child {
+                    border-right: 0px solid $color--black;
+                }
+            }
+        }
+
+        
+}
+
+.activities__container {
+    display: flex;
+    padding: 40px 0px 0px 0px;
+    
+     @include respond-to-min($md) {
+            padding: 70px 0px 0px 0px;
+        }
+
+    .activities__container__info {
+        @include respond-to-min($md) {
+        }
+    }
+.activities__container__img {
+    display: flex;
+    min-height: 400px;
+    position: relative;
+    @include respond-to-min($lg) {
+        min-height: 500px;
+    }
+
+    .activities__container__img1 {
+        width: 65%;
+        height: 100%;
+        padding-top: 20px;
+
+        @include respond-to-min($md) {
+        }
+    }
+    .activities__container__img2 {
+        width: 35%;
+        height: 60%;
+        padding-left: 20px;
+
+        @include respond-to-min($md) {
+        }
+    }
+}
+}
+}

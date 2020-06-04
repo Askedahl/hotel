@@ -1,0 +1,23 @@
+.events {
+    margin-bottom: -40px;
+
+    .events__container {
+
+        .event__container {
+            margin-bottom: 30px;
+
+            .event__container__top {
+
+                height: 400px;
+            }
+
+            .event__container__bottom {
+
+                padding: 30px;
+                .event__container__bottom__date {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+/*==============================
+    :: BUTTON STYLING ::
+==============================*/
+
+.btn {
+	position: relative;
+	font-family: $font--pri;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: $color--white;
+	padding: 0px 0px;
+    font-size: 16px;
+    letter-spacing: 3px;
+    
+    
+    &:after {    
+        content: "";
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0px;
+        display: block;
+        height: 1px;
+        left: 50%;
+        position: absolute;
+        background: $color--white;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0%;
+      }
+    
+
+    &:hover {
+        color: $color--white;
+
+        &:after {    
+            width: 100%; 
+            left: 0%; 
+          }
+	}	
+	
+	&:disabled {
+
+    }
+
+    &:active {
+
+    }
+}
+
+.btn-dark {
+	position: relative;
+	font-family: $font--pri;
+	text-transform: uppercase;
+    font-weight: 600;
+    background-color: $color--white;
+	color: $color--black;
+	padding: 0px 0px;
+    font-size: 16px;
+    letter-spacing: 3px;
+    
+    
+    &:after {    
+        content: "";
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0px;
+        display: block;
+        height: 1px;
+        left: 50%;
+        position: absolute;
+        background: $color--black;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0%;
+      }
+    
+
+    &:hover {
+        background-color: $color--white;
+        text-decoration: none;
+        color: $color--black;
+
+        &:after {    
+            width: 100%; 
+            left: 0%; 
+          }
+	}	
+	
+	&:disabled {
+
+    }
+
+    &:active {
+
+    }
+}
+
+.btn-box {
+    position: relative;
+	font-family: $font--pri;
+	text-transform: uppercase;
+    font-weight: 600;
+    background-color: $color--blue;
+	color: $color--white;
+	padding: 10px 40px;
+    font-size: 16px;
+    letter-spacing: 3px;
+    border: 1px solid $color--white;
+    transition: 0.2s;
+
+    &:hover {
+        background-color: $color--blue;
+        text-decoration: none;
+        color: $color--grey;
+        border: 1px solid $color--grey;
+	}	
+}

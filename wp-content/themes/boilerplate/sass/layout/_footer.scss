@@ -1,0 +1,80 @@
+/*==============================
+    :: FOOTER STYLING ::
+==============================*/
+
+footer {
+    height: 170px;
+    position: relative;
+    z-index: 10;
+
+    .footer__nav {
+        padding-top: 20px;
+
+        a {
+            margin-right: 20px;
+            font-size: 16px;
+            @include respond-to-min($xl) {
+                margin-right: 25px;
+                font-size: 18px;
+            }
+            @include respond-to-min($xxl) {
+                margin-right: 30px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .footer__background__top {
+        border-top: 1px solid $color--black;
+        height: 70px;
+        position: absolute;
+        bottom: 100px;
+        width: 100%;
+    }
+    .footer__background__buttom {
+        border-top: 1px solid $color--black;
+        height: 100px;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+    }
+    .maps__container__info {
+        
+        color: $color--black;
+        display: block;
+        padding: 60px 0px 100px 0px;
+        @include respond-to-min($md) {
+            display: flex;
+        padding: 60px 0px 100px 0px;
+        }
+        @include respond-to-min($lg) {
+        padding: 60px 0px 50px 0px;
+        }
+        .maps__container__info__navn {
+            padding-right: 20px;
+        }
+
+        .maps__container__info__social__container {
+        
+            margin-left:auto; margin-right:0;
+            .maps__container__info__social__paragraph {
+                font-weight: 600;
+            }
+
+            .maps__container__info__social {
+               
+                @include respond-to-min($md) {
+                    float: right;
+                }
+                .maps__container__info__social__icons {
+
+                    svg {
+                        height: 30px;
+                        padding-right: 10px;
+                        .cls-1{fill: black;}
+                    }
+                }
+            }
+        }
+    }
+}
