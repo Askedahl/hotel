@@ -17,7 +17,7 @@
   "author": "Jakob Plenge @ Oak Digital",
   "license": "ISC",
   "devDependencies": {
-    "grunt": "^1.0.1",
+    "grunt": "^1.5.2",
     "grunt-autoprefixer": "^3.0.4",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-concat": "^1.0.1",
